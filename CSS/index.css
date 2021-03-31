@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  height: 200vh;
+}
+
+.navbar {
+  position: fixed;
+  background-color: red;
+  width: 100%;
+  height: 70px;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 25%;
+}
+
+.logo__navbar {
+  margin: 25px 20px;
+}
+
+.nav__menu {
+  float: right;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+
+.nav__menu__item {
+  display: inline-block;
+  margin: 0 5px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 2.4rem;
+  color: #555;
+}
+
+.nav__menu__item:hover, .nav__menu__item:active {
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.menu__barras {
+  display: none;
+  float: right;
+  margin: 10px 20px;
+}
+
+#checkbox_navbar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__barras {
+    display: block;
+  }
+  .nav__menu {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #16f;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .nav__menu__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 50px 0;
+  }
+  #checkbox_navbar:checked ~ .nav__menu {
+    left: 0;
+  }
+}
+/*# sourceMappingURL=index.css.map */

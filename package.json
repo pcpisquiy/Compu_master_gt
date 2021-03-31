@@ -1,0 +1,26 @@
+{
+  "name": "compu_master_gt",
+  "version": "1.0.0",
+  "description": "página web compu master gt ",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcpisquiy/Compu_master_gt.git"
+  },
+  "author": "Pcpisquiy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pcpisquiy/Compu_master_gt/issues"
+  },
+  "homepage": "https://github.com/pcpisquiy/Compu_master_gt#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
