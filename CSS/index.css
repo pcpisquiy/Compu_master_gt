@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -9,21 +13,24 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
+body {
+  background-color: black;
 }
 
-body {
-  height: 200vh;
+.espaciado {
+  padding-top: 70px;
 }
 
 .navbar {
   position: fixed;
-  background-color: red;
+  top: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(red));
+  background-image: linear-gradient(blue, red);
   width: 100%;
   height: 70px;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 25%;
+  z-index: 10;
 }
 
 .logo__navbar {
@@ -37,15 +44,15 @@ body {
 }
 
 .nav__menu__item {
+  list-style: none;
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 20px;
   font-family: "Nanum Gothic", sans-serif;
-  font-size: 2.4rem;
-  color: #555;
+  font-size: 2rem;
+  color: white;
 }
 
 .nav__menu__item:hover, .nav__menu__item:active {
-  background-color: rgba(255, 255, 255, 0.5);
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
@@ -56,38 +63,163 @@ body {
   margin: 10px 20px;
 }
 
-#checkbox_navbar {
+.nav__menu__item--close {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+.slider {
+  overflow: hidden;
+}
+
+.slider__figure {
+  position: relative;
+  position-display: flex;
+  position-flex-direction: row;
+  width: 400%;
+  margin: 0;
+  left: 0;
+  -webkit-animation: 20s slider infinite;
+          animation: 20s slider infinite;
+}
+
+.img__slider {
+  width: 25%;
+  float: left;
+}
+
+@-webkit-keyframes slider {
+  10% {
+    left: 0;
+  }
+  20% {
+    left: -102%;
+  }
+  50% {
+    left: -102%;
+  }
+  75% {
+    left: -203%;
+  }
+  100% {
+    left: -203%;
+  }
+}
+
+@keyframes slider {
+  10% {
+    left: 0;
+  }
+  20% {
+    left: -102%;
+  }
+  50% {
+    left: -102%;
+  }
+  75% {
+    left: -203%;
+  }
+  100% {
+    left: -203%;
+  }
+}
+
+.main {
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.title {
+  color: white;
+  font-family: "Dosis", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.descripcion {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em;
+  text-align: justify;
+}
+
+.container {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.flex__ubicaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1200px) {
   .menu__barras {
     display: block;
+    cursor: pointer;
   }
   .nav__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0;
     position: fixed;
+    top: 0;
     width: 100%;
-    height: 100vh;
-    background-color: #16f;
-    left: -100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(blue), to(skyblue));
+    background-image: linear-gradient(blue, skyblue);
+    right: -100%;
     text-align: center;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
   .nav__menu__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 50px 0;
+    margin: 30px 0;
+    width: 40%;
   }
-  #checkbox_navbar:checked ~ .nav__menu {
-    left: 0;
+  .nav__menu__item--close {
+    display: inline-block;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    float: right;
+    right: 0;
+    margin: 20px 20px;
+    padding: 5px 10px;
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    list-style: none;
+    cursor: pointer;
+  }
+  .nav__menu__item--close:active {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .show {
+    right: 0;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .descripcion {
+    font-size: 1.5rem;
+  }
+  .container {
+    padding: 1.5rem;
+    margin: .5rem;
   }
 }
 /*# sourceMappingURL=index.css.map */

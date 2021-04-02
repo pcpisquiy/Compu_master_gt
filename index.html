@@ -7,37 +7,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swapfamily=Dosis:wght@200&family=Ubuntu:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="CSS/index.css">
-    <title>Document</title>
+    <title>CompuMaster GT</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <span class="logo__navbar"><img src="./IMAGES/logo.png" height="60px" alt=""></span>
-        <input type="checkbox" id="checkbox_navbar">
-        <label for="checkbox_navbar" class="menu__barras">
-            <img src="./IMAGES/barras.png" height="40" width="40"  alt="barras">
+    <nav class="navbar" id="navbar">
+        <a href="./index.html"><span class="logo__navbar"><img src="./IMAGES/logo.png" height="60px" alt=""></span></a>
+        <label class="menu__barras" id="nav__menu--open">
+            <img src="./IMAGES/barras.png" height="40" width="40" alt="barras">
         </label>
-            <ul class="nav__menu">
-                <a href="#">
-                    <li class="nav__menu__item">Inicio</li>
-                </a>
-                <a href="#">
-                    <li class="nav__menu__item">Ubicaciones</li>
-                </a>
-                <a href="#">
-                    <li class="nav__menu__item">Servicios</li>
-                </a>
-                <a href="#">
-                    <li class="nav__menu__item">Nosotros</li>
-                </a>
-                <a href="#">
-                    <li class="nav__menu__item">Productos</li>
-                </a>
-            </ul>
+        <ul class="nav__menu" id="nav__menu">
+            <a href="#main" class="nav__menu__item">
+                <li>Inicio</li>
+            </a>
+            <a href="#ubicaciones" class="nav__menu__item">
+                <li>Ubicaciones</li>
+            </a>
+            <a href="#" class="nav__menu__item">
+                <li>Servicios</li>
+            </a>
+            <a href="#" class="nav__menu__item">
+                <li>Nosotros</li>
+            </a>
+            <a href="#" class="nav__menu__item">
+                <li>Productos</li>
+            </a>
+                <li class="nav__menu__item--close" id="nav__menu--close"><i class="fas fa-times"></i></li>
+        </ul>
     </nav>
-    
+    <div class="slider">
+        <figure class="slider__figure" style="height: 100vh;">
+            <img src="./IMAGES/slider-1.jpg" style="height: 100%;" class="img__slider" alt="">
+            <img src="./IMAGES/slider-2.png" style="height: 100%;" class="img__slider" alt="">
+            <img src="./IMAGES/slider-3.png" style="height: 100%; width: 103vw;" class="img__slider" alt="">
+        </figure>
+    </div>
+    <main class="main espaciado" id="main">
+        <section class="container">
+            <header>
+                <h1 class="title">CompuMaster Venta de Computadoras</h1>
+            </header>
+            <article class="container">
+                <p class="descripcion">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos eligendi iste pariatur quia,
+                    inventore praesentium eius illo quisquam aliquam debitis, eos ducimus numquam ullam est
+                    reprehenderit animi autem voluptatem maxime?. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Officia, tempore perspiciatis veniam consectetur recusandae at omnis ipsum saepe neque vitae,
+                    amet aspernatur odio quo modi architecto fugit. Nam, natus delectus?
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, non minus. Iure cumque doloribus quasi
+                    ipsum odio eius porro adipisci. Quasi quod reiciendis neque ratione placeat ut consequuntur aliquid
+                    sequi?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima blanditiis quo quibusdam
+                    quae fuga doloribus unde illo eligendi vero obcaecati non molestias possimus magnam incidunt dolor
+                    eos perferendis, quisquam fugiat!
+                </p>
+            </article>
+        </section>
+    </main>
+    <div class="espaciado" id="ubicaciones">
+        <section class="container">
+            <header>
+                <h2 class="title">Ubicaciones</h2>
+            </header>
+            <article class="flex__ubicaciones">
+                <div class="ubicacion__1">
+                    <section>
+                        <header>
+                            <h2 class="title">QUETZALTENANAGO</h2>
+                        </header>
+                        <article>
+                            <p class="descripcion"></p>
+                        </article>
+                    </section>
+                </div>
+                <div class="ubicacion__2">
+
+                </div>
+                <div class="ubicacion__3">
+
+                </div>
+            </article>
+        </section>
+    </div>
+    <script src="JS/index.js"></script>
 </body>
 
 </html>

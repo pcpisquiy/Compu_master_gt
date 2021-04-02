@@ -1,10 +1,12 @@
 .navbar
     position: fixed
-    background-color: red
+    top: 0
+    background-image: linear-gradient(blue,red)
     width: 100%
     height: 70px
     border-bottom-left-radius: 10%
     border-bottom-right-radius: 25%
+    z-index: 10
 .logo__navbar
     margin: 25px 20px
 .nav__menu
@@ -12,39 +14,20 @@
     margin-top: 20px
     margin-right: 100px
 .nav__menu__item
+    list-style: none
     display: inline-block
-    margin: 0 5px
+    margin: 0 20px
     font-family: $fuente_navbar
-    font-size: 2.4rem
-    color: #555
+    font-size: 2rem
+    color: white
 .nav__menu__item:hover,.nav__menu__item:active
-    background-color: rgba(white, 0.5)
     transform: scale(0.8)
 .menu__barras
     display: none
     float: right
     margin: 10px 20px
-#checkbox_navbar
+.nav__menu__item--close
     display: none
-@media screen and ( max-width: 768px)
-    .menu__barras
-        display: block
-    .nav__menu
-       margin: 0
-       position: fixed
-       width: 100%
-       height: 100vh
-       background-color: #16f
-       left: -100%
-       text-align: center
-       transition: all 0.5s
-    .nav__menu__item
-        display: flex
-        align-content: center
-        justify-content: center
-        margin: 50px 0
-    #checkbox_navbar:checked ~ .nav__menu
-        left: 0
 
 
     
