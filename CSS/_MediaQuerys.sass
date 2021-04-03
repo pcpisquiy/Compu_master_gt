@@ -4,8 +4,8 @@
         cursor: pointer
     .nav__menu
         display: flex
-        align-items: start
-        justify-content: center
+        align-items: center
+        justify-content: flex-start
         flex-direction: column
         margin: 0
         position: fixed
@@ -17,8 +17,12 @@
         text-align: center
         transition: all 0.5s
     .nav__menu__item
+        border-bottom: 4px solid #000
         margin: 30px 0
-        width: 40%
+        background-color: rgba(black,0.3)
+        font-size: 3rem
+        border-radius: 40%
+        animation: up_down_buttons 2s  infinite ease  
     .nav__menu__item--close
         display: inline-block
         background-color: black
@@ -59,3 +63,11 @@
         right: 0
     .flex__container__ubicaciones
         flex-direction: column
+    .image__ubicaciones
+        max-width: 100%
+    .titulo__ubicacion
+        font-size: 2rem
+    .text__ubicaciones
+        font-size: 1.2rem
+        margin-top: 50px
+        margin-left: 0
