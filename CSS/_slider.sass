@@ -8,6 +8,20 @@
 	margin: 0
 	left: 0
 	animation: 20s slider infinite
+.arrow
+	display: flex
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	justify-content: center
+	align-items: end
+	margin-bottom: 80px 
+	animation: arrow__move 3s infinite 
+.arrow__color
+	color: white
+	font-size: 800%
 
 .img__slider
 	width: 25%
@@ -26,5 +40,13 @@
 
 	100% 
 		left: -203%
-	
+@keyframes arrow__move
+	0%
+		transform: translateY(0)
+	50% 
+		transform: translateY(-20%)
+
+	100%
+		transform: translateY(0)
+		
 

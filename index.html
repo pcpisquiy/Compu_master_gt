@@ -16,8 +16,21 @@
 </head>
 
 <body>
+    <div class="slider">
+        <figure class="slider__figure" style="height: 100vh;">
+            <img src="./IMAGES/slider-1.jpg" style="height: 100%;" class="img__slider" alt="">
+            <img src="./IMAGES/slider-2.png" style="height: 100%;" class="img__slider" alt="">
+            <img src="./IMAGES/slider-3.png" style="height: 100%; width: 103vw;" class="img__slider" alt="">
+        </figure>
+        <div class="arrow">
+            <a href="#main">
+                <i class="fas fa-arrow-down arrow__color"></i>
+            </a>
+        </div>
+    </div>
     <nav class="navbar" id="navbar">
-        <a href="./index.html"><span class="logo__navbar"><img src="./IMAGES/logo.png" height="60px" alt=""></span></a>
+        <div class="logo"><span class="logo__navbar"> <a href="./index.html"><img src="./IMAGES/logo2.png" height="30px"
+                        alt="" /><span class="texto__logo">Compumaster Gt</span></a></span></div>
         <label class="menu__barras" id="nav__menu--open">
             <img src="./IMAGES/barras.png" height="40" width="40" alt="barras">
         </label>
@@ -37,16 +50,9 @@
             <a href="#" class="nav__menu__item">
                 <li>Productos</li>
             </a>
-                <li class="nav__menu__item--close" id="nav__menu--close"><i class="fas fa-times"></i></li>
+            <li class="nav__menu__item--close" id="nav__menu--close"><i class="fas fa-times"></i></li>
         </ul>
     </nav>
-    <div class="slider">
-        <figure class="slider__figure" style="height: 100vh;">
-            <img src="./IMAGES/slider-1.jpg" style="height: 100%;" class="img__slider" alt="">
-            <img src="./IMAGES/slider-2.png" style="height: 100%;" class="img__slider" alt="">
-            <img src="./IMAGES/slider-3.png" style="height: 100%; width: 103vw;" class="img__slider" alt="">
-        </figure>
-    </div>
     <main class="main espaciado" id="main">
         <section class="container">
             <header>
@@ -74,25 +80,11 @@
             <header>
                 <h2 class="title">Ubicaciones</h2>
             </header>
-            <article class="flex__ubicaciones">
-                <div class="ubicacion__1">
-                    <section>
-                        <header>
-                            <h2 class="title">QUETZALTENANAGO</h2>
-                        </header>
-                        <article>
-                            <p class="descripcion"></p>
-                        </article>
-                    </section>
-                </div>
-                <div class="ubicacion__2">
-
-                </div>
-                <div class="ubicacion__3">
-
-                </div>
+            <article class="flex__container__ubicaciones">
+                    <img class="image__ubicaciones" src="./IMAGES/9caa2793658f3cc387f216157300b1ce_XL.png" alt="">
+                <p class="text__ubicaciones">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, quasi, neque sint excepturi laborum deserunt accusamus eum porro iure est dignissimos? Recusandae ad facilis rem iusto, accusantium excepturi! Placeat, suscipit.</p>
             </article>
-        </section>
+            </section>
     </div>
     <script src="JS/index.js"></script>
 </body>
