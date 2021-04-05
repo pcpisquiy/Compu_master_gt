@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swapfamily=Dosis:wght@200&family=Ubuntu:ital,wght@1,300&display=swapfamily=Archivo+Black&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title title>CompuMaster GT</title title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo"><span class="logo__navbar"> <a href="./index.html"><img src="./IMAGES/logo2.png" height="30px"
+                        alt="" /><span class="texto__logo">Compumaster Gt</span></a></span></div>
+        <label class="menu__barras" id="nav__menu--open">
+            <img src="./IMAGES/barras.png" height="40" width="40" alt="barras">
+        </label>
+        <ul class="nav__menu" id="nav__menu">
+            <a href="./index.html#main" class="nav__menu__item">
+                <li>Inicio</li>
+            </a>
+            <a href="./index.html#ubicaciones" class="nav__menu__item">
+                <li>Ubicaciones</li>
+            </a>
+            <a href="./servicios.html" class="nav__menu__item">
+                <li>Servicios</li>
+            </a>
+            <a href="./index.html#Nosotros" class="nav__menu__item">
+                <li>Nosotros</li>
+            </a>
+            <a href="./productos.html" class="nav__menu__item">
+                <li>Productos</li>
+            </a>
+            <li class="nav__menu__item--close" id="nav__menu--close"><i class="fas fa-times"></i></li>
+        </ul>
+    </nav>
+    <div class="container_botones">
+                <button class="btn  fltr-controls " data-filter="all">TODOS</button>
+                <button class="btn m-1 fltr-controls " data-filter="1">Perifericos Para pc</button>
+                <button class="btn m-1 fltr-controls " data-filter="2">Componenetes Para pc</button>
+                <input type="text" class="fltr-controls search" name="filtr-search"  placeholder="Your search" data-search>
+    </div>
+    <div class="container__gallery">
+        <div class="gallery">
+                <div class="imagen__container filtr-item" data-category="1" data-sort="valu" data-author="q">
+                    <div class="filtr-title title">headsets</div>
+                    <img src="./IMAGES/Productos/headset1.jpg" class="img__product" alt="An Image">
+                </div>
+                <div class="imagen__container filtr-item" data-category="1" data-sort="valu" data-author="q">
+                    <div class="filtr-title title">mouse</div>
+                    <img src="./IMAGES/Productos/Mouse1.jpg" class="img__product" alt="An Image">
+                </div>
+                <div class="imagen__container filtr-item" data-category="1" data-sort="valu" data-author="q">
+                    <div class="filtr-title title">China</div>
+                    <img src="./IMAGES/Productos/headset1.jpg" class="img__product" alt="An Image">
+                </div>
+                <div class="imagen__container filtr-item" data-category="1" data-sort="valu" data-author="q">
+                    <div class="filtr-title title">China</div>
+                    <img src="./IMAGES/Productos/headset1.jpg" class="img__product" alt="An Image">
+                </div>
+                <div class="imagen__container filtr-item" data-category="1" data-sort="valu" data-author="q">
+                    <div class="filtr-title title">China</div>
+                    <img src="./IMAGES/Productos/headset1.jpg" class="img__product" alt="An Image">
+                </div>
+                <div class="imagen__container filtr-item" data-category="1" data-sort="valu" data-author="q">
+                    <div class="filtr-title title">China</div>
+                    <img src="./IMAGES/Productos/headset1.jpg" class="img__product" alt="An Image">
+                </div>
+                <div class="imagen__container filtr-item" data-category="1" data-sort="valu" data-author="q">
+                    <div class="filtr-title title">China</div>
+                    <img src="./IMAGES/Productos/headset1.jpg" class="img__product" alt="An Image">
+                </div>
+                <div class="imagen__container filtr-item" data-category="1" data-sort="valu" data-author="q">
+                    <div class="filtr-title title">China</div>
+                    <img src="./IMAGES/Productos/headset1.jpg" class="img__product" alt="An Image">
+                </div>
+                <div class="imagen__container filtr-item" data-category="1" data-sort="valu" data-author="q">
+                    <div class="filtr-title title">China</div>
+                    <img src="./IMAGES/Productos/headset1.jpg" class="img__product" alt="An Image">
+                </div>
+        </div>
+    </div>
+        <script src="./JS/index.js"></script>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/filterizr/dist/jquery.filterizr.min.js"></script>
+    <script src="./JS/productos.js"></script>
+</body>
+
+</html>

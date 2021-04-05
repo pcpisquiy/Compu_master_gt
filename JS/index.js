@@ -36,3 +36,4 @@ function linkAction(){
   window.addEventListener('scroll', enableScroll());
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+

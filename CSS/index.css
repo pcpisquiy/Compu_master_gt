@@ -203,10 +203,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -225,51 +221,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 30px 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card:hover {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-}
-
-.card:first-child {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
-}
-
-.card:nth-child(2) {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.card:nth-child(3) {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-}
-
-.card:nth-child(4) {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.card:nth-child(5) {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
 }
 
 .card__footer {
@@ -308,11 +271,66 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 3px solid #000;
 }
 
 .img__card {
   margin-top: 20px;
+  margin-bottom: 20px;
   max-width: 70%;
+}
+
+.btn {
+  background-image: radial-gradient(circle, grey, white);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20%;
+  color: black;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.btn:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.container_botones {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search {
+  width: 40%;
+  height: 30px;
+  border: none;
+  border-radius: 5%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.imagen__container {
+  width: 350px;
+  height: 350px;
+  margin: 30px !important;
+  padding: 30px !important;
+}
+
+.img__product {
+  max-width: 100%;
+  height: 100%;
 }
 
 @-webkit-keyframes arrow__move {
@@ -443,9 +461,7 @@ body {
     transition: all 0.5s;
   }
   .nav__menu__item {
-    border-bottom: 4px solid #000;
     margin: 30px 0;
-    background-color: rgba(0, 0, 0, 0.3);
     font-size: 3rem;
     border-radius: 40%;
     -webkit-animation: up_down_buttons 2s  infinite ease;
@@ -484,6 +500,12 @@ body {
     padding: 1.5rem;
     margin: .5rem;
   }
+  .flex__container__ubicaciones {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .descripcion__tienda {
     font-size: 1.5em;
   }
@@ -503,12 +525,6 @@ body {
     left: 0;
     right: 0;
   }
-  .flex__container__ubicaciones {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   .image__ubicaciones {
     max-width: 100%;
   }
@@ -526,7 +542,6 @@ body {
     -ms-flex-item-align: center !important;
         -ms-grid-row-align: center !important;
         align-self: center !important;
-    margin-bottom: 50px;
   }
 }
 /*# sourceMappingURL=index.css.map */
